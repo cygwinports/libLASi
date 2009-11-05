@@ -1,0 +1,63 @@
+libLASi
+------------------------------------------
+libLASi is a library that provides a C++ stream output interface ( with 
+operator << ) for creating Postscript documents that can contain 
+characters from any of the scripts and symbol blocks supported in 
+Unicode and by Owen Taylor's Pango layout engine. The library 
+accomodates right-to-left scripts such as Arabic and Hebrew as easily as 
+left-to-right scripts. Indic and Indic-derived Complex Text Layout (CTL) 
+scripts, such as Devanagari, Thai, Lao, and Tibetan are supported to the 
+extent provided by Pango and by the OpenType fonts installed on your 
+system. All of this is provided without need for any special 
+configuration or layout calculation on the programmer's part.
+
+Runtime requirements:
+  cygwin-1.7.0-62
+  libfreetype6-2.3.11-1
+  libgcc1-4.3.4-1
+  libglib2.0_0-2.22.2-1
+  libpango1.0_0-1.26.0-1
+  libstdc++6-4.3.4-1
+
+Build requirements:
+(besides corresponding -devel packages)
+  binutils-2.19.51-1
+  cmake-2.6.4-10
+  cygport-0.9.10-1
+  gawk-3.1.7-1
+  gcc4-core-4.3.4-1
+  gcc4-g++-4.3.4-1
+  make-3.81-2
+  pkg-config-0.23b-10
+  sed-4.1.5-2
+
+Canonical website:
+  http://unifont.org/lasi/
+
+Canonical download:
+  http://sourceforge.net/projects/lasi/files/
+
+-------------------------------------------
+
+Build instructions:
+  unpack libLASi-1.1.0-X-src.tar.bz2
+    if you use setup to install this src package, it will be
+	 unpacked under /usr/src automatically
+  cd /usr/src
+  cygport ./libLASi-1.1.0-X.cygport all
+
+This will create:
+  /usr/src/libLASi-1.1.0-X-src.tar.bz2
+  /usr/src/libLASi-devel-1.1.0-X.tar.bz2
+  /usr/src/libLASi0-1.1.0-X.tar.bz2
+
+-------------------------------------------
+
+Port Notes:
+
+----- version 1.1.0-1 -----
+Initial release for Cygwin 1.7.
+
+
+Cygwin port maintained by:
+http://sourceware.org/cygwinports/

@@ -1,0 +1,11 @@
+inherit cmake
+
+
+HOMEPAGE="http://unifont.org/lasi/"
+SRC_URI="mirror://sourceforge/lasi/${P}.tar.gz"
+PATCH_URI="1.1.0-docdir.patch"
+
+PKG_NAMES="${PN} libLASi0 libLASi-devel"
+libLASi0_CONTENTS="--exclude=html usr/bin/cygLASi-0.dll usr/share/doc/"
+libLASi_devel_CONTENTS="usr/include/ usr/lib/ usr/share/doc/${PN}/html/
+                        usr/share/lasi${PV}/examples/"
